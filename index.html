@@ -1,0 +1,253 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h2>Login</h2>
+        <input type="text" placeholder="User Name" name="" id="text"><br>
+        <input type="password" placeholder="Password" name="" id="password"><br>
+        <input type="submit" id="submit">
+    </div>
+    <div class="container">
+        <nav>
+            <div class="logo">Point of Sales</div>
+            <div class="right">
+                <ion-icon name="person-sharp"></ion-icon>
+                <font>Welcome</font>
+                <ion-icon name="calendar-sharp"></ion-icon>
+                <div class="date">
+                    <div class="week"></div>
+                    <div class="month"></div>
+                    <div class="day"></div>
+                    <div class="year"></div>
+                </div>
+                <div class="exit"> <ion-icon class="log" onclick="log()" name="power-sharp"></ion-icon>Log Out</div>
+            </div>
+        </nav>
+        <div class="block">
+            <div class="blockOne">
+                <ul>
+                    <li class="btn_dash"><ion-icon name="speedometer-sharp"></ion-icon><font>Dashboard</font></li>
+                    <li class="btn_sales"><ion-icon name="cart"></ion-icon><font>Sales</font></li>
+                    <li class="btn_product"><ion-icon name="document-text"></ion-icon><font>Products</font></li>
+                    <li class="btn_cous"><ion-icon name="people"></ion-icon><font>Customers</font></li>
+                    <li class="btn_sup"><ion-icon name="briefcase"></ion-icon><font>Supplers</font></li>
+                    <li  class="btn_sal"><ion-icon name="bar-chart"></ion-icon><font>Sales report</font></li>
+                </ul>
+              <footer>
+                <p>Time:</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="hours"></div>
+              </footer>
+            </div>
+
+
+
+
+
+            <div class="box">
+                <div class="dashboard">
+                   
+                <h1>
+                     <ion-icon name="speedometer-sharp"></ion-icon><font>Dashboard</font>
+                    </h1>
+                        <div class="logo_dash">ERIC & Pharmacy</div>
+                        <button class="loogo"><ion-icon name="arrow-forward-circle"></ion-icon></button>
+                        <div class="four">
+                            <div class="one">
+                                 <ion-icon name="cart"></ion-icon><br>
+                                 <font>Sales</font>
+                            </div>
+                            <div class="one">
+                                <ion-icon name="document-text"></ion-icon><br>
+                                <font>products</font>
+                           </div>
+                           <div class="one">
+                            <ion-icon name="people"></ion-icon><br>
+                            <font>Customers</font>
+                       </div>
+                        </div>
+
+
+
+                        <div class="four">
+                            <div class="one">
+                                 <ion-icon name="briefcase"></ion-icon><br>
+                                 <font>Supplers</font>
+                            </div>
+                            <div class="one">
+                                <ion-icon name="bar-chart"></ion-icon><br>
+                                <font>Sales</font>
+                           </div>
+                           <div class="one">
+                            <ion-icon name="power"></ion-icon><br>
+                            <font>Log Out</font>
+                       </div>
+                        </div>
+                   
+                </div>
+                <div class="sales">
+                    <h1> <ion-icon name="cash"></ion-icon><font>Sales</font></h1>
+                    <p>Dashboard/Sales</p>
+                    <button class="back"><ion-icon name="caret-back-circle"></ion-icon></ion-icon></button>
+                    <button class="add">+add</button>
+                    <table align="center" width="80%">
+                        <tr>
+                            <td>Product Name</td>
+                            <td>Genertic Name</td>
+                            <td>category Description</td>
+                            <td>Price</td>
+                            <td>QTY</td>
+                            <td>Amount</td>
+                            <td>Profil</td>
+                            <td>Action</td>
+                        </tr>
+                        <tr class="new_tr"></tr>
+                    </table>
+                    <button class="btn_save"><ion-icon name="save"></ion-icon> Save</button>
+                    <div class="add_product">
+                        <ion-icon name="close" class="ion-icon"></ion-icon>
+                        <p>
+                            <font>Product Name:</font>
+                            <input type="text" class="Product">
+                        </p>
+                        <p>
+                            <font>Generic Name:</font>
+                            <input type="text" class="Generic">
+                        </p>
+                        <p>
+                            <font>Category/Description:</font>
+                            <input type="text" class="Category">
+                        </p>
+                        <p>
+                            <font>Price:</font><br>
+                            <input type="number" class="Price">
+                        </p>
+                       
+                        
+                        <button class="save_pr">Save</button>
+                </div>
+                
+                </div>
+                <div class="products">
+                    <h1> 
+                        <ion-icon name="document-text"></ion-icon>&nbsp&nbsp<font>Products</font>
+                    </h1>
+                    <p>Dashboard/ <span>products</span></p>
+                    <button class="back1"><ion-icon name="caret-back-circle"></ion-icon></ion-icon></button>
+                    <h2>Total Number Of Products: <span>[1]</span> <br> <span class="span">[0]</span>Products are below QTY of 10</h2><br>
+                    <div class="flex">
+                    <input type="search" placeholder="Search Product....">
+                        <button><ion-icon name="add-circle"></ion-icon>Add products</button>
+                    </div>
+                    <table class="ttrr">
+                        <tr class="ttr1">
+                            <td>Brand Name</td>
+                            <td>Genetic Name</td>
+                            <td>Category 1 <br> Description</td>
+                            <td>Suppler</td>
+                            <td>Date <br> Received</td>
+                            <td>Explary Dates</td>
+                            <td>Original <br> Price</td>
+                            <td>Selling <br> price1</td>
+                            <td>QTY</td>
+                            <td>Ony <br> Left</td>
+                            <td>Total</td>
+                            <td>Action</td>
+                        </tr>
+                        <tr class="ttr2">
+                            <td>№</td>
+                            <td>Meat</td>
+                            <td>Unhealthy</td>
+                            <td></td>
+                            <td>12.12.1212</td>
+                            <td>14.14.1414</td>
+                            <td>80.000</td>
+                            <td>For Free</td>
+                            <td>0</td>
+                            <td>1025</td>
+                            <td>151.000</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="customers">
+                    <h1> 
+                        <ion-icon name="people"></ion-icon>&nbsp&nbsp<font>Supplers</font>
+                    </h1>
+                    <p>Dashboard/ <span>Supplers</span></p>
+                    <button class="back2"><ion-icon name="caret-back-circle"></ion-icon></ion-icon></button>
+                    <h2>Total Number Of Supplers: <span>[1]</span> </h2>
+                    <div class="flex">
+                    <input type="search" placeholder="Search Suppler....">
+                        <button class="addd"><ion-icon name="add-circle"></ion-icon>Add products</button>
+                    </div>
+                    <table class="ttrr">
+                        <tr class="ttr1">
+                            <td>Suppler</td>
+                            <td>Contract Person</td>
+                            <td>Address</td>
+                            <td>Contact No</td>
+                            <td>Note</td>
+                            <td>Action</td>
+                        </tr>
+                   
+                      <div class="mf">
+                        <tr class="ttr2">
+                            <td class="al">Alan</td>
+                            <td class="al1">+998 90 695 04 51</td>
+                            <td class="al2">12/34.54</td>
+                            <td class="al3">FD</td>
+                            <td class="al4">Gamburger</td>
+                           <div class="A">
+                            <td class="al5"><button><ion-icon name="refresh-circle"></ion-icon>Reflesh</button><br><br><button class="bbtn11"><ion-icon  name="trash"></ion-icon>Delate</button></td>
+                           </div>
+                        </tr>
+               <tr class="new1_tr"></tr>
+                      </div>
+                      <div class="add_product1">
+                        <ion-icon name="close" class="ion-icon1"></ion-icon>
+                        <p>
+                            <font>Suppler:</font>
+                            <input type="text" class="Product1">
+                        </p>
+                        <p>
+                            <font>Contact person:</font>
+                            <input type="text" class="Generic1">
+                        </p>
+                        <p>
+                            <font>Addresss:</font>
+                            <input type="text" class="Category1">
+                        </p>
+                        <p>
+                            <font>Contact NO:</font><br>
+                            <input type="number" class="Price1">
+                        </p>
+
+                        <p>
+                            <font>Note:</font><br>
+                            <input type="text" class="Note1">
+                        </p>
+                       
+                        
+                        <button class="save_pr1">Save</button>
+                </div>
+                
+
+               
+                     
+                        
+                </div>
+                
+        </div>
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

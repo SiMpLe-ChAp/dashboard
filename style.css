@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    width: 300px;
+    margin: 10% auto;
+    box-shadow: 0 0 10px 1px dodgerblue;
+    text-align: center;
+    padding: 2%;
+    display: none;
+}
+.form h2{
+    color: dodgerblue;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 1% 3%;
+    margin: 5% 0;
+    height: 5%;
+    outline: none;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+input::placeholder{
+    color: dodgerblue;
+}
+#submit{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 1%;
+}
+
+#submit:active{
+    background-color: darkblue;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: dodgerblue;
+    color: white;
+}
+.right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.date{
+    display: flex;
+}
+.right font{
+    margin-right: 10px;
+}
+.date div{
+    margin: 5px;
+}
+.exit{
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+.exit ion-icon{
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 5px;
+}
+.logo{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.block{
+    display: flex;
+    width: 100%;
+}
+.blockOne{
+    width: 30%;
+    background-color: rgb(5, 55, 105);
+    box-shadow: 0 0 5px 1px dodgerblue;
+    height: 90vh;
+    padding: 2% 5%;
+    font-size: 20px;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+li{
+    padding: 5% 0;
+}
+li ion-icon{
+    margin-right: 20px;
+    color: dodgerblue;
+}
+.blockOne footer{
+    margin-top: 20vh;
+    display: flex;
+}
+.hours{
+    background-color: dodgerblue;
+    color: white;
+    width: 80px;
+    padding: 1%;
+}
+
+
+.container{
+    display: block;
+}
+.four{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 2% 10%;
+    justify-content: space-between;
+}
+.box{
+    width: 100%;
+}
+.one{
+    width: 30%;
+    font-size: 20px;
+    background-color: skyblue;
+    padding: 3% 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px dodgerblue;
+    color: white;
+    margin-top: 5%;
+}
+.one ion-icon{
+color: white;
+font-size: 50px;
+padding-left: 40%;
+}
+.one font{
+    padding-left: 35%;
+}
+.dashboard h1 , .sales h1 , .products h1{
+    font-size: 50px;
+    color: wheat;
+    margin-left: 3%;
+
+}
+.dashboard{
+    background: linear-gradient( darkblue,dodgerblue);
+    height: 90vh;
+    display: none;
+   padding: 1% 5%;
+}
+
+.sales{
+    background: linear-gradient( darkblue,dodgerblue);
+   height: 90vh;
+   padding: 1% 5%;
+   display: none;
+}
+.add{
+    background-color: skyblue;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    padding: 1% 1.5%;
+    border-radius: 5px;
+    margin-left: 80%;
+    font-weight: 900;
+}
+table{
+    margin: 1% 10%;
+    border: 2px solid dodgerblue;
+    color: white;
+}
+td{
+    border: 2px solid dodgerblue;
+
+}
+.btn_save{
+    width: 80%;
+    padding: 1% 0;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    margin: 0 10%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.sales p{
+    margin-left:5%;
+    color: white;
+    font-family: serif;
+    font-size: 35px;
+}
+.logo_dash{
+    margin-left: 40%;
+    color: white;
+    font-family: serif;
+    font-size: 35px;
+}
+.back{
+    font-size: 25px; 
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 5px 2px skyblue;
+}
+.loogo{
+    font-size: 25px; 
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 5px 2px skyblue;
+    margin-left: 90%;
+    margin-top: -5%;
+}
+.products{
+    background: linear-gradient( darkblue,dodgerblue);
+    height: 90vh;
+   padding: 1% 5%;
+   display: none;
+   color: white;
+}
+.products p{
+    margin-left:5%;
+    color: white;
+    font-family: serif;
+    font-size: 35px;
+}
+.products h2{
+    text-align: center;
+    font-size: 15px;
+}
+.products span{
+    color: green;
+}
+.products .span{
+    color: red;
+}
+.products input{
+width: 60%;
+}
+.flex button{
+    margin-left: 15%;
+    width: 24%;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    box-shadow: 0 0 5px 2px darkblue;
+    height: 30px;
+}
+.flex ion-icon{
+    color: white;
+    background-color: dodgerblue;
+    margin-right: 30%;
+    border: none;
+    border-radius: 50%;
+    font-size: 15px;
+}
+.ttrr{
+    border: 2px solid dodgerblue;
+    width: 105%;
+    margin-left: -2%;
+    margin-top: -3%;
+}
+
+.ttr2{
+    height: 100px;
+}
+.back1{
+    font-size: 25px; 
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    margin-top: 4%;
+    box-shadow: 0 0 5px 2px skyblue;
+}
+.customers{
+    background: linear-gradient( darkblue,dodgerblue);
+    height: 90vh;
+   padding: 1% 5%;
+   display: none;
+   color: white;
+}
+.customers input{
+width: 60%;
+}
+.customers span{
+    color: green;
+}
+.customers h2{
+    margin-left: 25%;
+}
+.customers .ttr2 button{
+    background-color: darkblue;
+    border: none;
+    color: white;
+    width: 70px;
+    margin-left: 25px;
+    box-shadow: 0 0 5px 3px dodgerblue;
+    height: 30px;
+}
+.customers .ttr2 button:hover{
+    rotate: 360deg;
+    background-color: red;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.back2{
+    font-size: 25px; 
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    margin-top: 4%;
+    box-shadow: 0 0 5px 2px skyblue;
+}
+.add_product{
+    width: 300px;
+    background-color: dodgerblue;
+    padding: 2% ;
+    box-shadow: 0 0 5px 2px rgb(200, 221, 241);
+    margin-left: 10%;
+    position: absolute;
+    padding: 2%;
+    margin-top: -250px;
+    display: none;
+}
+.save_pr{
+    background-color: skyblue;
+    color: white;
+    width: 100%;
+    border: none;
+    height: 10%;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 2%;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px 2px rgb(200, 221, 241);
+}
+.add_product input{
+    width: 60%;
+    margin-left: 35%;
+}
+.add_product font{
+    font-size: 20px;
+    margin-right: 10%;
+}
+.add_product .ion-icon{
+    color: white;
+    background-color: darkblue;
+    margin-left: 95%;
+    font-size: 16px;
+    margin-right: -20px;
+}
+.add_product .ion-icon:hover{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+.add_product1{
+    width: 300px;
+    background-color: dodgerblue;
+    padding: 2% ;
+    box-shadow: 0 0 5px 2px rgb(200, 221, 241);
+    margin-left: 10%;
+    position: absolute;
+    padding: 2%;
+    margin-top: -250px;
+    display: none;
+}
+.save_pr1{
+    background-color: skyblue;
+    color: white;
+    width: 100%;
+    border: none;
+    height: 10%;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 2%;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px 2px rgb(200, 221, 241);
+}
+.add_product1 input{
+    width: 60%;
+    margin-left: 35%;
+}
+.add_product1 font{
+    font-size: 20px;
+    margin-right: 10%;
+}
+.add_product1 .ion-icon1{
+    color: white;
+    background-color: darkblue;
+    margin-left: 95%;
+    font-size: 16px;
+    margin-right: -20px;
+}
+.add_product1 .ion-icon1:hover{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
